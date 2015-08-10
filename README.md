@@ -1,4 +1,3 @@
-test
+LeetCode
 ====
-
-Just for test！
+Just for practice programming skill！
