@@ -12,11 +12,11 @@ struct ListNode {
 	struct ListNode *next;
 };
 
-#include "addTwoNumbers.II.c"
+#include "addTwoNumbers.III.c"
 
-struct ListNode* createList(int num) {
+struct ListNode* createList(long num) {
 	struct ListNode *res, *cur, *next;
-	int i;
+	long i;
 
 	res = (struct ListNode*)malloc(sizeof(struct ListNode));
 	cur = res;
@@ -44,7 +44,7 @@ void printList(struct ListNode* l) {
 }
 
 int main(void) {
-	int a1 = 81, a2 = 0;
+	long a1 = 9, a2 = 9999999991;
 	struct ListNode *l1, *l2, *res;
 
 	l1 = createList(a1);
