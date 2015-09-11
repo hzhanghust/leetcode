@@ -7,11 +7,11 @@
 
 #include<stdio.h>
 
-#include "longestSubstringWithoutRepeatingCharacters.c"
+#include "longestSubstringWithoutRepeatingCharacters.II.c"
 
 
 int main(void) {
-	char *s = "abbacb";
+	char *s = "zhang han hzhang.hust@gmail.com";
 	int res;
 
 	res = lengthOfLongestSubstring(s);
