@@ -7,11 +7,11 @@
 
 #include<stdio.h>
 
-#include "medianOfTwoSortedArrays.c"
+#include "medianOfTwoSortedArrays.II.c"
 
 int main(void) {
-	int nums1[] = {3};
-	int nums2[] = {4,5};
+	int nums1[] = {2,4,4,6,8,10,11};
+	int nums2[] = {1,2,5,6};
 	int nums1Size, nums2Size, i;
 	double res;
 
@@ -40,4 +40,10 @@ int main(void) {
 
 	printf("output:\n");
 	printf("\t%lf\n", res);
+
+	printf("others:\n");
+	printf("\t2-th-small is %d\n", (int)findKthSmall(nums1, nums1Size, nums2, nums2Size, 2));
+	printf("\t2-th-large is %d\n", (int)findKthLarge(nums1, nums1Size, nums2, nums2Size, 2));
+	printf("\t6-th-small is %d\n", (int)findKthSmall(nums1, nums1Size, nums2, nums2Size, 6));
+	printf("\t6-th-large is %d\n", (int)findKthLarge(nums1, nums1Size, nums2, nums2Size, 6));
 }

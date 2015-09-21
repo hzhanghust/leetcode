@@ -15,11 +15,11 @@
 
 /* 
  * find the k-th smallest elements of arrays nums1 & nums2 
- * we assume k must small than total/2
  */
 double findKth(int *nums1, int nums1Size, int *nums2, int nums2Size, int k) {
 	int pa, pb;
 
+	/* This is must, otherwise pb may larger than nums2Size */
 	if (nums1Size > nums2Size) {
 		return findKth(nums2, nums2Size, nums1, nums1Size, k);
 	}
